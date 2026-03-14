@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Videojuegos</title>
+</head>
+<body>
+    
+    <h1>Portal de Videojuegos</h1>
+    <h2>Bienvenido a la comunidad gamer</h2>
+    <h3>Explora el mundo del gaming</h3>
+    <h4>Noticias y reseñas</h4>
+    <h5>Últimas actualizaciones</h5>
+    <h6>Desarrollado por gamers para gamers</h6>
+
+    
+    <h2>Top 10 Videojuegos de Aventura</h2>
+    <ol>
+        <li>The Legend of Zelda: Breath of the Wild</li>
+        <li>Red Dead Redemption 2</li>
+        <li>The Witcher 3: Wild Hunt</li>
+        <li>God of War</li>
+        <li>Horizon Zero Dawn</li>
+        <li>Assassin's Creed Odyssey</li>
+        <li>Uncharted 4</li>
+        <li>Tomb Raider</li>
+        <li>Spider-Man</li>
+        <li>Ghost of Tsushima</li>
+    </ol>
+
+    
+    <h2>Consolas Populares</h2>
+    <ul>
+        <li>PlayStation 5</li>
+        <li>Xbox Series X</li>
+        <li>Nintendo Switch</li>
+        <li>PlayStation 4</li>
+        <li>Xbox One</li>
+        <li>Nintendo 3DS</li>
+        <li>Steam Deck</li>
+        <li>PC Gaming</li>
+        <li>Nintendo Wii</li>
+        <li>PlayStation Vita</li>
+    </ul>
+
+    
+    <h2>Géneros de Videojuegos</h2>
+    <dl>
+        <dt>RPG (Role Playing Game)</dt>
+        <dd>Juegos donde controlas personajes con habilidades y estadísticas que evolucionan.</dd>
+        
+        <dt>FPS (First Person Shooter)</dt>
+        <dd>Juegos de disparos en primera persona con acción intensa.</dd>
+        
+        <dt>MOBA (Multiplayer Online Battle Arena)</dt>
+        <dd>Juegos estratégicos multijugador en tiempo real.</dd>
+        
+        <dt>Plataformas</dt>
+        <dd>Juegos que requieren saltar entre plataformas y superar obstáculos.</dd>
+        
+        <dt>Survival Horror</dt>
+        <dd>Juegos de terror donde debes sobrevivir en ambientes hostiles.</dd>
+    </dl>
+
+    
+    <h2>Registro de Jugador</h2>
+    <form action="/submit" method="POST">
+        
+        <label for="username">Nombre de usuario:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="gamertag">Gamertag:</label><br>
+        <input type="text" id="gamertag" name="gamertag" required><br><br>
+        
+        <label for="bio">Biografía:</label><br>
+        <input type="text" id="bio" name="bio"><br><br>
+
+        
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        
+        <label for="age">Edad:</label><br>
+        <input type="number" id="age" name="age" min="13" max="99" required><br><br>
+
+        
+        <label for="joindate">Fecha de registro:</label><br>
+        <input type="date" id="joindate" name="joindate" required><br><br>
+
+        <label>Plataformas que posees:</label><br>
+        <input type="checkbox" id="ps5" name="platform" value="ps5">
+        <label for="ps5">PlayStation 5</label><br>
+        <input type="checkbox" id="xbox" name="platform" value="xbox">
+        <label for="xbox">Xbox Series X</label><br>
+        <input type="checkbox" id="switch" name="platform" value="switch">
+        <label for="switch">Nintendo Switch</label><br>
+        <input type="checkbox" id="pc" name="platform" value="pc">
+        <label for="pc">PC Gaming</label><br><br>
+
+        
+        <label>Género favorito:</label><br>
+        <input type="radio" id="action" name="genre" value="action">
+        <label for="action">Acción</label><br>
+        <input type="radio" id="rpg" name="genre" value="rpg">
+        <label for="rpg">RPG</label><br>
+        <input type="radio" id="sports" name="genre" value="sports">
+        <label for="sports">Deportes</label><br>
+        <input type="radio" id="strategy" name="genre" value="strategy">
+        <label for="strategy">Estrategia</label><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="avatar">Avatar (imagen de perfil):</label><br>
+        <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+
+        <label for="themecolor">Color del tema:</label><br>
+        <input type="color" id="themecolor" name="themecolor" value="#0066cc"><br><br>
+
+        <label for="skill">Nivel de habilidad (1-10):</label><br>
+        <input type="range" id="skill" name="skill" min="1" max="10" value="5"><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>

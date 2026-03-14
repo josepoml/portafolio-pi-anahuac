@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementación Multimedia y APIs de Sindicación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="media-node">
+            <h2>Audio HTML5</h2>
+            <audio controls preload="metadata">
+                <source src="recurso_audio.mp3" type="audio/mpeg">
+                El motor de renderizado no soporta la API de Audio HTML5.
+            </audio>
+        </section>
+
+        <section class="media-node">
+            <h2>Vídeo HTML5</h2>
+            <video controls width="640" height="360" preload="metadata">
+                <source src="video.mp4" type="video/mp4">
+                El motor de renderizado no soporta la API de Vídeo HTML5.
+            </video>
+        </section>
+
+        <section class="media-node">
+            <h2>Video YouTube  (iframe)</h2>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <section class="media-node">
+            <h2>Feed X/Twitter (iframe)</h2>
+            <iframe src="https://syndication.twitter.com/srv/timeline-profile/screen-name/SpaceX" width="500" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </section>
+
+        <section class="media-node">
+            <h2>Feed Facebook (iframe)</h2>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </section>
+
+        <section class="media-node">
+            <h2>Geolocalización Google Maps (iframe)</h2>
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=INSERTAR_API_KEY_AQUI&q=19.432608,-99.133209"></iframe>
+        </section>
+    </main>
+</body>
+</html>

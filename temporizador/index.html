@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Cuenta Regresiva Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Configuración del Objetivo Temporal</h2>
+        <div class="input-group">
+            <input type="datetime-local" id="target-date" class="date-input">
+            <button id="start-btn" disabled>Iniciar Cuenta Regresiva</button>
+        </div>
+
+        <div id="countdown-display" class="timer-display">
+            <div class="time-unit">
+                <span id="days" class="number">00</span>
+                <span class="label">Días</span>
+            </div>
+            <div class="time-unit">
+                <span id="hours" class="number">00</span>
+                <span class="label">Horas</span>
+            </div>
+            <div class="time-unit">
+                <span id="minutes" class="number">00</span>
+                <span class="label">Minutos</span>
+            </div>
+            <div class="time-unit">
+                <span id="seconds" class="number">00</span>
+                <span class="label">Segundos</span>
+            </div>
+        </div>
+        <div id="message" class="expiry-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

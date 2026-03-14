@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Usuario</title>
+</head>
+<body>
+    <form id="userDataForm">
+        <label>Nombre: <input type="text" id="name"></label><br>
+        <label>Correo: <input type="email" id="email"></label><br>
+        <label>Edad: <input type="number" id="age"></label><br>
+        
+        <fieldset>
+            <legend>Género:</legend>
+            <label><input type="radio" name="gender" value="Masculino"> Masculino</label>
+            <label><input type="radio" name="gender" value="Femenino"> Femenino</label>
+            <label><input type="radio" name="gender" value="Otro"> Otro</label>
+        </fieldset>
+
+        <label>Fecha de nacimiento: <input type="date" id="dob"></label><br>
+        <label>Color favorito: <input type="color" id="favColor"></label><br>
+        
+        <button type="button" onclick="displayData()">Enviar</button>
+    </form>
+    <p id="dataOutput"></p>
+    <script src="formulario.js"></script>
+</body>
+</html>
